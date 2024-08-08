@@ -1,5 +1,45 @@
 import { jsonPractica } from './data-practica';
 
+    interface iVarEjemploDesestruct {
+        ex1: string,
+        ex2: number
+    }
+
+    interface ivariable {
+        valor1: string,
+        valor2: number,
+        valor3: boolean,
+        valor4?: string | number | boolean,
+        metodo1(): void,
+        valStruct: iVarEjemploDesestruct
+    }
+
+    let varDinamica: any = 'Bootcamp';
+    varDinamica = 100;
+    varDinamica = true;
+    varDinamica = [1, 'Hola', true];
+
+    
+    
+
+
+
+    let dataInterface: ivariable = {
+        valor1: 'a',
+        valor2: 1,
+        valor3: false,
+        valor4: 'Cualquier cosa',
+        metodo1() {
+            console.log('salute')
+        },
+        valStruct: {
+            ex1: 'Data example',
+            ex2: 1
+        }
+    }
+
+    console.log(dataInterface.valStruct.ex1);
+
 
     // 1. Obtener todos los titulos entregados de todos los usuarios
     
