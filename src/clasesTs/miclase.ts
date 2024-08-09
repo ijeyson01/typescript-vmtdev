@@ -29,4 +29,10 @@ class MiClase {
     get dataCuentas(){
         return this._dataCuentas['dataCuentasX']['ahorrosX']['estadoCuenta'];
     }
+
+    // generar clases e interfaces para:
+    // 1. Definir cuantos viajes ha realizado cada persona
+    // -Definir cuales objetos pueden ser clases y cuales pueden ser interfaces
+    // -Definir cuales pueden ser los métodos para los casos de uso 
+    // 2. Obtener a la persona con más viajes
 }
