@@ -1200,3 +1200,5 @@ export const jsonPractica = [
         "completed": false
     }
 ];
+
+export const valorCero = 0;

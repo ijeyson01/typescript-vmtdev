@@ -1,4 +1,4 @@
-import { jsonPractica } from './data-practica';
+import { jsonPractica, valorCero } from './data-practica';
 
     interface iVarEjemploDesestruct {
         ex1: string,
@@ -19,7 +19,7 @@ import { jsonPractica } from './data-practica';
     varDinamica = true;
     varDinamica = [1, 'Hola', true];
 
-    
+    console.log(valorCero);
     
 
 
