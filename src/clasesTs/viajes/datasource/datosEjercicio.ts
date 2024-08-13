@@ -1,4 +1,4 @@
-const persona = [
+export const persona = [
     {
         "id": 1,
         "name": "Juan Perez",
@@ -31,7 +31,7 @@ const persona = [
     }
 ]
 
-const direccioOrigenPersona = [
+export const direccioOrigenPersona = [
     {
         "id": 1,
         "person_id": 1,
@@ -69,7 +69,7 @@ const direccioOrigenPersona = [
     }
 ]
 
-const datosDestino = [
+export const datosDestino = [
     {
         "id": 1,
         "person_id": 1,

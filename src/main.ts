@@ -1,5 +1,8 @@
+import { ViajesService } from './clasesTs/viajes/servicio/viajesservice';
 import './style.css'
 //import './funcionesymetodos/funciones_metodos'
-import './funcionesymetodos/procesosarray'
+//import './funcionesymetodos/procesosarray'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `HOLA MUNDO`;
+var viajes = new ViajesService();
+
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = viajes.viajesPersona(5);

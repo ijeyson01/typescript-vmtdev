@@ -1,6 +1,6 @@
 
 
-class Persona {
+export class Persona {
     
     constructor(
         private _id: number,

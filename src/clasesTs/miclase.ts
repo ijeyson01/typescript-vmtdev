@@ -31,7 +31,7 @@ class MiClase {
     }
 
     // generar clases e interfaces para:
-    // 1. Definir cuantos viajes ha realizado cada persona
+    // 1. Obtener cuantos viajes ha realizado una persona
     // -Definir cuales objetos pueden ser clases y cuales pueden ser interfaces
     // -Definir cuales pueden ser los métodos para los casos de uso 
     // 2. Obtener a la persona con más viajes
