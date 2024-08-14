@@ -55,4 +55,37 @@ export class ViajesService {
         }
         console.log(dataResponse);
     }
+
+    // 3. Obtener los datos de una persona con su dirección
+    /* 
+    Presentar la informacion en este formato json:
+    {
+        'id': 1,
+        'name': 'Jeyson Jaramillo',
+        'direccion': 'Guayaquil'
+    } 
+    */
+
+    public datosPersonaDireccion(person_id: number): any{
+        let personaDireccion: any = persona.find(persona => persona.id === person_id);
+        if(Util.estaVacio(personaDireccion)){
+            return {'message':'La persona no está registrada'};
+        } else {
+            let direccion: any = direccioOrigenPersona.find( direccion => direccion.person_id === person_id);
+            if(Util.estaVacio(direccion)){
+                return {
+                    'id': personaDireccion.id,
+                    'name': personaDireccion.name,
+                    'direccion': 'Sin dirección registrada'
+                }
+            } else {
+                return {
+                    'id': personaDireccion.id,
+                    'name': personaDireccion.name,
+                    'direccion': direccion.address
+                }
+            }
+
+        }
+    }
 }

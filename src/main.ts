@@ -5,4 +5,4 @@ import './style.css'
 
 var viajes = new ViajesService();
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = viajes.viajesPersona(5);
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = JSON.stringify(viajes.datosPersonaDireccion(5));
